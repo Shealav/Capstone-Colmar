@@ -1,0 +1,53 @@
+Html {
+box-sizing: border-box;
+font-family: "Arial", sans-serif;
+font-size: 16px;
+line-height: 1.5;
+}
+
+.mobile-header {
+  display: none
+}
+
+.desktop-header {
+  display:flex;
+  border: black 1px solid;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: black 1px solid;
+}
+
+logo {
+  display: inline-flex;
+  align-items: center;
+  width: 100%
+}
+
+h1 {
+  font-family: "Arial Narrow";
+  font-size: 1.8rem;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  border: black 1px solid;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-content:space-between;
+  list-style: none;
+  width: 640px;
+}
+
+a {
+  text-decoration: none;
+}
