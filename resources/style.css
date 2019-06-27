@@ -70,7 +70,7 @@ li {
   background-color: rgba(210, 180, 140, 0.5);
   border: black 1px solid;
 }
-.banner-image {
+.banner-container img {
   max-width: 60%;
   padding: 2rem 1.5rem;
 }
@@ -138,7 +138,7 @@ button {
     display: flex;
     flex-direction: column;
 }
-  .banner-image {
+  .banner-container img {
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
