@@ -1,6 +1,7 @@
+
 Html {
 box-sizing: border-box;
-font-family: "Arial", sans-serif;
+font-family: "Times New Roman", serif;
 font-size: 16px;
 line-height: 1.5;
 }
@@ -12,6 +13,7 @@ line-height: 1.5;
 .desktop-header {
   display:flex;
   border: black 1px solid;
+  height: 64px;
 }
 
 .header-container {
@@ -24,30 +26,136 @@ line-height: 1.5;
 logo {
   display: inline-flex;
   align-items: center;
-  width: 100%
+  width: 100%;
+  margin-left: 24px;
+}
+
+logo img {
+  height: 48px;
 }
 
 h1 {
   font-family: "Arial Narrow";
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .nav-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-around;
+  align-items: center;
+  padding-right: 24px;
   border: black 1px solid;
+}
+
+nav {
+  font-family: "Arial Narrow";
 }
 
 ul {
   display: flex;
-  justify-content: flex-end;
-  align-content:space-between;
+  justify-content: space-between;
   list-style: none;
-  width: 640px;
+  margin-right: 24px;
+  width: 350px;
+  border: black 1px solid;
 }
 
-a {
+li {
   text-decoration: none;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(210, 180, 140, 0.5);
+  border: black 1px solid;
+}
+.banner-image {
+  max-width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.banner-text {
+  width: 30%;
+  border: black 1px solid;
+  padding: 24px 0;
+}
+
+h2 {
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+button {
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+  padding: 8px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 640px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 24px;
+    border: black 1px solid;
+  }
+
+  .mobile-header-container {
+    display: inline-flex;
+    width: 100%;
+    border: black 1px solid;
+  }
+
+  .mobile-header {
+    display: inline-flex;
+    width: 100%;
+    height: 64px;
+    border: black 1px solid;
+  }
+
+  .mobile-nav {
+    display: inline-flex;
+    flex-direction: row;
+    border: black 1px solid;
+  }
+
+  .mobile-nav img {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+}
+  .banner-image {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    }
+  .banner-text {
+    width: 100%;
+    padding-top: 0;
+    padding-left: 16px;
+}
+  button {
+    margin: 24px 16px 32px 16px;
+  }
+  h2 {
+    margin: 32px 16px;
+  }
+  h3 {
+    margin: 32px 16px;
+  }
 }
