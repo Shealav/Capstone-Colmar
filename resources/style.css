@@ -5,6 +5,8 @@ font-size: 16px;
 line-height: 2.5rem;
 }
 
+/*header*/
+
 .mobile-header {
   display: none
 }
@@ -52,7 +54,7 @@ h1 span {
 }
 
 nav {
-  font-family: "Arial", serif;
+  font-family: "Arial", sans-serif;
 }
 
 ul {
@@ -68,12 +70,15 @@ li {
   text-decoration: none;
 }
 
+/*Banner*/
+
 .banner-container {
   display: flex;
   flex-direction: row;
   background-color: rgba(210, 180, 140, 0.5);
   border: black 1px solid;
 }
+
 .banner-container img {
   max-width: 60%;
   padding: 2rem 1.5rem;
@@ -86,7 +91,7 @@ li {
 }
 
 h2 {
-  font-family: "Arial", serif;
+  font-family: "Arial", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   line-height: 3rem;
@@ -110,12 +115,13 @@ button {
   width: 85%;
 }
 
+/*Campus Info*/
+
 .campus-lg-frame {
   display: flex;
   flex-direction: column;
   max-width: 60%;
   border: black 1px solid;
-  margin: 0;
 }
 
 .campus-lg-frame img {
@@ -139,6 +145,59 @@ h4 {
   padding-bottom: 2rem;
   border: black 1px solid;
 }
+
+.campus-sm-frame {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  border: black 1px solid;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.campus-info {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  width: 100%;
+  border: black 1px solid;
+}
+
+.campus-info img {
+  width: 35%;
+  padding: 1rem;
+  border: black 1px solid;
+}
+
+.campus-info2 {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(210, 180, 140, 0.5);
+  border: black 1px solid;
+}
+
+.campus-info2 img {
+  width: 35%;
+  padding: 1rem;
+  border: black 1px solid;
+}
+h5 {
+  font-family: "Arial", sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+a {
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 1rem;
+  padding-top: .5rem;
+
+}
+/*Mobile Devices*/
 
 @media only screen and (max-width: 640px) {
   .desktop-header {
