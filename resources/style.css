@@ -1,9 +1,8 @@
-
 Html {
 box-sizing: border-box;
 font-family: "Times New Roman", serif;
 font-size: 16px;
-line-height: 1.5;
+line-height: 2.5rem;
 }
 
 .mobile-header {
@@ -13,7 +12,7 @@ line-height: 1.5;
 .desktop-header {
   display:flex;
   border: black 1px solid;
-  height: 64px;
+  height: 4rem;
 }
 
 .header-container {
@@ -27,28 +26,33 @@ logo {
   display: inline-flex;
   align-items: center;
   width: 100%;
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 logo img {
-  height: 48px;
+  height: 3rem;
 }
 
 h1 {
-  font-family: "Arial Narrow";
-  font-size: 2rem;
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+h1 span {
+  font-weight: lighter;
 }
 
 .nav-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-right: 24px;
+  padding-right: 1.5rem;
   border: black 1px solid;
 }
 
 nav {
-  font-family: "Arial Narrow";
+  font-family: "Arial", serif;
 }
 
 ul {
@@ -56,7 +60,7 @@ ul {
   justify-content: space-between;
   list-style: none;
   margin-right: 24px;
-  width: 350px;
+  width: 380px;
   border: black 1px solid;
 }
 
@@ -78,24 +82,62 @@ li {
 .banner-text {
   width: 30%;
   border: black 1px solid;
-  padding: 24px 0;
+  margin-top: 8rem;
 }
 
 h2 {
-  font-family: "Arial Narrow", sans-serif;
+  font-family: "Arial", serif;
+  font-weight: bold;
   font-size: 2.5rem;
+  line-height: 3rem;
+  padding-bottom: 1.5rem;
+  border: black 1px solid;
 }
 
 h3 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  border: black 1px solid;
 }
 
 button {
   color: white;
   background-color: black;
   font-size: 1.5rem;
-  padding: 8px;
-  width: 80%;
+  padding: .5rem;
+  width: 85%;
+}
+
+.campus-lg-frame {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  border: black 1px solid;
+  margin: 0;
+}
+
+.campus-lg-frame img {
+  padding: 2rem 1.5rem;
+  }
+
+.campus-main {
+  margin-left: 1.5rem;
+}
+
+p {
+  line-height: 1.5rem;
+  border: black 1px solid;
+}
+
+h4 {
+  font-family: "Arial", sans-serif;
+  font-size: .8rem;
+  line-height: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  border: black 1px solid;
 }
 
 @media only screen and (max-width: 640px) {
@@ -148,7 +190,7 @@ button {
     width: 100%;
     padding-top: 0;
     padding-left: 16px;
-}
+  }
   button {
     margin: 24px 16px 32px 16px;
   }
