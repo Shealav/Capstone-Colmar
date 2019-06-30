@@ -117,6 +117,10 @@ button {
 
 /*Campus Info*/
 
+.campus-container {
+  display: flex;
+}
+
 .campus-lg-frame {
   display: flex;
   flex-direction: column;
