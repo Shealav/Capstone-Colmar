@@ -119,12 +119,13 @@ button {
 
 .campus-container {
   display: flex;
+  width: 100%;
 }
 
 .campus-lg-frame {
   display: flex;
   flex-direction: column;
-  max-width: 60%;
+  width: 60%;
   border: black 1px solid;
 }
 
@@ -159,7 +160,7 @@ h4 {
   margin-top: 2rem;
 }
 
-.campus-info, .campus-info2 {
+.campus-info, .campus-info2, {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -178,7 +179,7 @@ h4 {
   display: none;
 }
 
-.campus-info2 {
+.campus-info2, .courses-title, .courses-container {
   background-color: rgba(191, 191, 191, 1);
 }
 
@@ -192,45 +193,77 @@ a {
   font-family: "Arial Narrow", sans-serif;
   font-size: 1rem;
   padding-top: .5rem;
+}
+
+.courses-title {
+  padding-top: 2rem;
+  padding-bottom: .5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.courses-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 2rem;
+  border: black 1px solid;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  width: 30%;
 
 }
+
+.course-software, .course-comp-art, .course-design, .course-data, .course-business, .course-marketing {
+  margin-top: -2px;
+  background-color: white;
+  padding: 1rem 0 1.5rem 1rem;
+}
+
 /*Mobile Devices*/
 
 @media only screen and (max-width: 640px) {
   .desktop-header {
     display: none;
-  }
+}
 
   .mobile-logo {
     display: inline-flex;
     align-items: center;
     margin-left: 24px;
     border: black 1px solid;
-  }
+}
 
   .mobile-header-container {
     display: inline-flex;
     width: 100%;
     border: black 1px solid;
-  }
+}
 
   .mobile-header {
     display: inline-flex;
     width: 100%;
     height: 64px;
     border: black 1px solid;
-  }
+}
 
   .mobile-nav {
     display: inline-flex;
     flex-direction: row;
     border: black 1px solid;
-  }
+}
 
   .mobile-nav img {
     padding-right: 24px;
     padding-left: 24px;
-  }
+}
 
   .banner-container {
     display: flex;
@@ -244,12 +277,14 @@ a {
   .banner-text {
     width: 100%;
     padding-top: 0;
+    margin-top: 0;
 }
 
   button {
-    margin: 24px 16px 32px 16px;
+    margin: 1.5rem 1rem 2rem 1rem;
     background-color: rgba(108, 122, 137, 1);
 }
+
   h2, h3 {
     margin: 32px 16px;
 }
