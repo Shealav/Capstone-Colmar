@@ -1,6 +1,6 @@
 Html {
 box-sizing: border-box;
-font-family: "Times New Roman", serif;
+font-family: "Cambria", serif;
 font-size: 16px;
 line-height: 2.5rem;
 }
@@ -75,7 +75,7 @@ li {
 .banner-container {
   display: flex;
   flex-direction: row;
-  background-color: rgba(191, 191, 191, 1);
+  background-color: rgba(242, 241, 239, 1);
   border: black 1px solid;
 }
 
@@ -112,7 +112,7 @@ button {
   background-color: black;
   font-size: 1.5rem;
   padding: .5rem;
-  width: 85%;
+  width: 100%;
 }
 
 /*Campus Info*/
@@ -154,18 +154,18 @@ h4 {
 .campus-sm-frame {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   max-width: 40%;
   border: black 1px solid;
   margin-left: 1rem;
-  margin-top: 2rem;
-}
+  margin-bottom: 3rem;
+  }
 
-.campus-info, .campus-info2, {
+.campus-info, .campus-info2 {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  padding-bottom: 1rem;
   border: black 1px solid;
 }
 
@@ -180,7 +180,7 @@ h4 {
 }
 
 .campus-info2, .courses-title, .courses-container {
-  background-color: rgba(191, 191, 191, 1);
+  background-color: rgba(242, 241, 239, 1);
 }
 
 h5 {
@@ -190,9 +190,10 @@ h5 {
 }
 
 a {
-  font-family: "Arial Narrow", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 1rem;
-  padding-top: .5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .courses-title {
@@ -218,13 +219,12 @@ a {
   padding-right: 2rem;
   padding-bottom: 2rem;
   width: 30%;
-
 }
 
 .course-software, .course-comp-art, .course-design, .course-data, .course-business, .course-marketing {
   margin-top: -2px;
   background-color: white;
-  padding: 1rem 0 1.5rem 1rem;
+  padding: 1rem 0 2rem 1rem;
 }
 
 /*Mobile Devices*/
@@ -329,4 +329,38 @@ h5 {
 
 p, a {
   padding-left: 1rem;
+}
+
+.courses-title {
+  text-align: center;
+  width: 100%;
+  background-color: white;
+}
+
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: white;
+  border: black 1px solid;
+}
+
+.courses {
+  width: 100%;
+  padding: 1rem 1rem 1.5rem 1rem;
+  margin: 1rem;
+}
+
+.courses img {
+  display: none;
+}
+
+.courses p {
+  display: none;
+}
+
+.course-software, .course-comp-art, .course-design, .course-data, .course-business, .course-marketing {
+  display: flex;
+  background-color: rgba(242, 241, 239, 1);
+  margin-right: 4rem;
 }
