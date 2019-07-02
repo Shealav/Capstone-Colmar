@@ -117,12 +117,12 @@ button {
 
 /*Campus Info*/
 
-.campus-container {
+.campus-container, .exhibits-container {
   display: flex;
   width: 100%;
 }
 
-.campus-lg-frame {
+.campus-lg-frame, .exhibits-lg-frame {
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -133,7 +133,7 @@ button {
   padding: 2rem 1.5rem;
   }
 
-.campus-main {
+.campus-main, .exhibits-main {
   margin-left: 1.5rem;
 }
 
@@ -151,17 +151,18 @@ h4 {
   border: black 1px solid;
 }
 
-.campus-sm-frame {
+.campus-sm-frame, .exhibits-sm-frame {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 40%;
   border: black 1px solid;
   margin-left: 1rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
   }
 
-.campus-info, .campus-info2 {
+.campus-info, .campus-info2, .exhibits-info, .exhibits-info2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -169,7 +170,7 @@ h4 {
   border: black 1px solid;
 }
 
-.desktop-img {
+.desktop-img, .exhibits-img {
   width: 35%;
   padding: 1rem;
   border: black 1px solid;
@@ -179,7 +180,7 @@ h4 {
   display: none;
 }
 
-.campus-info2, .courses-title, .courses-container {
+.campus-info2, .courses-title, .courses-container, .exhibits-info {
   background-color: rgba(242, 241, 239, 1);
 }
 
@@ -196,7 +197,8 @@ a {
   padding-bottom: 1rem;
 }
 
-.courses-title {
+/*Courses Info (see campus css too)*/
+.courses-title, .exhibits-title {
   padding-top: 2rem;
   padding-bottom: .5rem;
   text-align: center;
@@ -226,6 +228,13 @@ a {
   background-color: white;
   padding: 1rem 0 2rem 1rem;
 }
+
+/*Thesis Exhibits (much is duplicates of Campus Info )*/
+
+.exhibits-video {
+  max-width: 60%;
+  border: black 1px solid;
+
 
 /*Mobile Devices*/
 
