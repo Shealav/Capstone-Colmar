@@ -75,7 +75,7 @@ li {
 .banner-container {
   display: flex;
   flex-direction: row;
-  background-color: rgba(242, 241, 239, 1);
+  background-color: rgba(232, 232, 232, 1);
 
 }
 
@@ -181,7 +181,7 @@ h4 {
 }
 
 .campus-info2, .courses-title, .courses-container, .exhibits-info {
-  background-color: rgba(242, 241, 239, 1);
+  background-color: rgba(232, 232, 232, 1);
 }
 
 h5 {
@@ -263,27 +263,22 @@ a {
 
 footer {
   font-family: "Arial", sans-serif;
-  margin-right: 5rem;
+  width: 60%;
 }
 
-.footer-terms {
-  flex-direction: row;
-  width: 600px;
-
-}
 .footer-list {
   display: flex;
-  justify-content: space-around;
-  width: 600px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
   list-style: none;
-  margin-left: 4rem;
-  margin-right:0;
-
+  margin-right:1rem;
 }
 
-li {
+.footer-list span {
   text-decoration: none;
 }
+
 /*Mobile Devices*/
 
 @media only screen and (max-width: 640px) {
@@ -328,6 +323,7 @@ li {
 }
   .banner-container img {
     max-width: 100%;
+    margin-bottom: 2rem;
     padding: 0;
 }
 
@@ -338,13 +334,20 @@ li {
 }
 
   button {
-    margin: 1.5rem 1rem 2rem 1rem;
+    margin: 0rem 1rem 2rem 1rem;
     background-color: rgba(108, 122, 137, 1);
 }
 
-  h2, h3 {
-    margin: 32px 16px;
+h2 {
+    margin: 2rem 1rem;
+    padding: 0;
 }
+
+h3 {
+  margin: 0 1rem 1.5rem 16px;
+  padding: 0;
+}
+
 .campus-lg-frame {
   display: none;
 }
@@ -362,11 +365,13 @@ li {
 .campus-info2 {
   margin-bottom: 2rem;
 }
-
 .campus-container, .campus-sm-frame {
   flex-direction: column;
   max-width: 100%;
-  margin: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .desktop-img {
@@ -386,6 +391,7 @@ h5 {
 
 p, a {
   padding-left: 1rem;
+  padding-bottom: .5rem;
 }
 
 .courses-title {
@@ -401,7 +407,6 @@ p, a {
   justify-content: space-between;
   padding: 0;
   background-color: white;
-
 }
 
 .courses {
@@ -422,7 +427,7 @@ p, a {
 
 .course-software, .course-comp-art, .course-design, .course-data, .course-business, .course-marketing {
   display: flex;
-  background-color: rgba(242, 241, 239, 1);
+  background-color: rgba(232, 232, 232, 1);
   margin-right: 4rem;
 }
 
@@ -446,13 +451,12 @@ p, a {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   width: 100%;
-
 }
 
 footer {
   font-family: "Arial", sans-serif;
 }
 
-.footer-terms {
+.footer-list {
   display: none;
 }
